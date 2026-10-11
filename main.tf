@@ -1,0 +1,6 @@
+data "oci_database_autonomous_database_instance_wallet_management" "database_autonomous_database_instance_wallet_management_lookup" {
+  for_each = var.database_autonomous_database_instance_wallet_management_lookup
+
+  autonomous_database_id = each.value.autonomous_database_id
+}
+
